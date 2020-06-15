@@ -1,0 +1,112 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=17116, tid=0x0000000000002594
+#
+# JRE version:  (8.0_111-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.111-b14 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002940800):  JavaThread "Unknown thread" [_thread_in_vm, id=9620, stack(0x0000000002740000,0x0000000002840000)]
+
+Stack: [0x0000000002740000,0x0000000002840000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002940800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=9620, stack(0x0000000002740000,0x0000000002840000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6516b0000 - 0x00007ff6516e7000 	C:\Program Files\Java\jdk1.8.0_111\bin\java.exe
+0x00007ffadb060000 - 0x00007ffadb250000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffadad30000 - 0x00007ffadade2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffad8120000 - 0x00007ffad83c3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffad9110000 - 0x00007ffad91b3000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffad9230000 - 0x00007ffad92ce000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffadac80000 - 0x00007ffadad17000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffada450000 - 0x00007ffada570000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffada060000 - 0x00007ffada1f4000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffad90c0000 - 0x00007ffad90e1000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffada3b0000 - 0x00007ffada3d6000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffad8520000 - 0x00007ffad86b4000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffad8480000 - 0x00007ffad851e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffad86c0000 - 0x00007ffad87ba000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffacad00000 - 0x00007ffacaf85000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.657_none_e6c5b579130e3898\COMCTL32.dll
+0x00007ffada5d0000 - 0x00007ffada906000 	C:\WINDOWS\System32\combase.dll
+0x00007ffad80a0000 - 0x00007ffad8120000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffada220000 - 0x00007ffada24e000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000061c20000 - 0x0000000061cf2000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\msvcr100.dll
+0x0000000061d00000 - 0x000000006259a000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\server\jvm.dll
+0x00007ffada440000 - 0x00007ffada448000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffad11b0000 - 0x00007ffad11b9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffadab40000 - 0x00007ffadabaf000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffad5fd0000 - 0x00007ffad5ff4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffad2280000 - 0x00007ffad228a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffad5fa0000 - 0x00007ffad5fcd000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffad8050000 - 0x00007ffad809a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000061ba0000 - 0x0000000061bc9000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.dll
+0x0000000061bd0000 - 0x0000000061bdf000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\verify.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: inputoutput.scanner
+java_class_path (initial): C:\Users\pc\looping.java\build\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\WINDOWS\System32\OpenSSH\;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;
+USERNAME=pc
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 20 Model 1 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 2 
+
+Memory: 4k page, physical 3780312k(235896k free), swap 15314648k(2500k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.111-b14) for windows-amd64 JRE (1.8.0_111-b14), built on Sep 22 2016 19:24:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri Jun 12 19:04:54 2020
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
